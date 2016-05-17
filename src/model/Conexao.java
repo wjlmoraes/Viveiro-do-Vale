@@ -20,7 +20,7 @@ public class Conexao {
 
     public static Connection getCon() {
         try {
-            return DriverManager.getConnection("jdbc:mysql://localhost/VIVEIRO", "root", "belezapura");
+            return DriverManager.getConnection("jdbc:mysql://localhost/VIVEIRO", "", "");
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "Erro na conexão!\n" + ex.getMessage());
             JOptionPane.showMessageDialog(null, "O programa sera fechado!");
